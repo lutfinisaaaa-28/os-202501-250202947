@@ -1,0 +1,322 @@
+lutfinisaaaa@cloudshell:~$ strace ls
+execve("/usr/bin/ls", ["ls"], 0x7ffede904980 /* 62 vars */) = 0
+brk(NULL)                               = 0x55727a6c3000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ecd22711000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35463, ...}) = 0
+mmap(NULL, 35463, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ecd22708000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=174472, ...}) = 0
+mmap(NULL, 181960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ecd226db000
+mmap(0x7ecd226e1000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7ecd226e1000
+mmap(0x7ecd226fe000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7ecd226fe000
+mmap(0x7ecd22704000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x7ecd22704000
+mmap(0x7ecd22706000, 5832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ecd22706000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ecd224c9000
+mmap(0x7ecd224f1000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ecd224f1000
+mmap(0x7ecd22679000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7ecd22679000
+mmap(0x7ecd226c8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7ecd226c8000
+mmap(0x7ecd226ce000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ecd226ce000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=625344, ...}) = 0
+mmap(NULL, 627472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ecd2242f000
+mmap(0x7ecd22431000, 450560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7ecd22431000
+mmap(0x7ecd2249f000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000) = 0x7ecd2249f000
+mmap(0x7ecd224c7000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x97000) = 0x7ecd224c7000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ecd2242c000
+arch_prctl(ARCH_SET_FS, 0x7ecd2242c800) = 0
+set_tid_address(0x7ecd2242cad0)         = 1302
+set_robust_list(0x7ecd2242cae0, 24)     = 0
+rseq(0x7ecd2242d120, 0x20, 0, 0x53053053) = 0
+mprotect(0x7ecd226c8000, 16384, PROT_READ) = 0
+mprotect(0x7ecd224c7000, 4096, PROT_READ) = 0
+mprotect(0x7ecd22704000, 4096, PROT_READ) = 0
+mprotect(0x557251448000, 8192, PROT_READ) = 0
+mprotect(0x7ecd22749000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7ecd22708000, 35463)           = 0
+statfs("/sys/fs/selinux", 0x7fff1e61ac20) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7fff1e61ac20)      = -1 ENOENT (No such file or directory)
+getrandom("\xff\x32\x8f\xd4\xb0\x03\x84\x80", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x55727a6c3000
+brk(0x55727a6e4000)                     = 0x55727a6e4000
+lutfinisaaaa@cloudshell:~$ lutfinisaaaa@cloudshell:~$ strace ls
+execve("/usr/bin/ls", ["ls"], 0x7ffede904980 /* 62 vars */) = 0
+brk(NULL)                               = 0x55727a6c3000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7ecd22711000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35463, ...}) = 0
+mmap(NULL, 35463, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7ecd22708000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=174472, ...}) = 0
+mmap(NULL, 181960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ecd226db000
+mmap(0x7ecd226e1000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7ecd226e1000
+mmap(0x7ecd226fe000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7ecd226fe000
+mmap(0x7ecd22704000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x7ecd22704000
+mmap(0x7ecd22706000, 5832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ecd22706000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7ecd224c9000
+mmap(0x7ecd224f1000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7ecd224f1000
+mmap(0x7ecd22679000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7ecd22679000
+mmap(0x7ecd226c8000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7ecd226c8000
+mmap(0x7ecd226ce000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7ecd226ce000
+
+-bash: lutfinisaaaa@cloudshell:~$: command not found
+-bash: syntax error near unexpected token `"/usr/bin/ls",'
+-bash: syntax error near unexpected token `NULL'
+-bash: syntax error near unexpected token `NULL,'
+-bash: syntax error near unexpected token `"/etc/ld.so.preload",'
+-bash: syntax error near unexpected token `AT_FDCWD,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `NULL,'
+-bash: syntax error near unexpected token `3'
+-bash: syntax error near unexpected token `AT_FDCWD,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `NULL,'
+-bash: syntax error near unexpected token `0x7ecd226e1000,'
+-bash: syntax error near unexpected token `0x7ecd226fe000,'
+-bash: syntax error near unexpected token `0x7ecd22704000,'
+-bash: syntax error near unexpected token `0x7ecd22706000,'
+-bash: syntax error near unexpected token `3'
+-bash: syntax error near unexpected token `AT_FDCWD,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `NULL,'
+-bash: syntax error near unexpected token `0x7ecd224f1000,'
+-bash: syntax error near unexpected token `0x7ecd22679000,'
+-bash: syntax error near unexpected token `0x7ecd226c8000,'
+-bash: syntax error near unexpected token `0x7ecd226ce000,'
+-bash: syntax error near unexpected token `3'
+-bash: syntax error near unexpected token `AT_FDCWD,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `3,'
+-bash: syntax error near unexpected token `NULL,'
+-bash: syntax error near unexpected token `0x7ecd22431000,'
+-bash: syntax error near unexpected token `0x7ecd2249f000,'
+-bash: syntax error near unexpected token `0x7ecd224c7000,'
+-bash: syntax error near unexpected token `3'
+-bash: syntax error near unexpected token `NULL,'
+-bash: syntax error near unexpected token `ARCH_SET_FS,'
+-bash: syntax error near unexpected token `0x7ecd2242cad0'
+-bash: syntax error near unexpected token `0x7ecd2242cae0,'
+-bash: syntax error near unexpected token `0x7ecd2242d120,'
+-bash: syntax error near unexpected token `0x7ecd226c8000,'
+-bash: syntax error near unexpected token `0x7ecd224c7000,'
+-bash: syntax error near unexpected token `0x7ecd22704000,'
+-bash: syntax error near unexpected token `0x557251448000,'
+-bash: syntax error near unexpected token `0x7ecd22749000,'
+-bash: syntax error near unexpected token `0,'
+-bash: syntax error near unexpected token `0x7ecd22708000,'
+-bash: syntax error near unexpected token `"/sys/fs/selinux",'
+-bash: syntax error near unexpected token `"/selinux",'
+lutfinisaaaa@cloudshell:~$ strace ls
+execve("/usr/bin/ls", ["ls"], 0x7ffe1012b4c0 /* 62 vars */) = 0
+brk(NULL)                               = 0x5addf8a64000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x780b5cedd000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35463, ...}) = 0
+mmap(NULL, 35463, PROT_READ, MAP_PRIVATE, 3, 0) = 0x780b5ced4000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=174472, ...}) = 0
+mmap(NULL, 181960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x780b5cea7000
+mmap(0x780b5cead000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x780b5cead000
+mmap(0x780b5ceca000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x780b5ceca000
+mmap(0x780b5ced0000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x780b5ced0000
+mmap(0x780b5ced2000, 5832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x780b5ced2000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x780b5cc95000
+mmap(0x780b5ccbd000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x780b5ccbd000
+mmap(0x780b5ce45000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x780b5ce45000
+mmap(0x780b5ce94000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x780b5ce94000
+mmap(0x780b5ce9a000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x780b5ce9a000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=625344, ...}) = 0
+mmap(NULL, 627472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x780b5cbfb000
+mmap(0x780b5cbfd000, 450560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x780b5cbfd000
+mmap(0x780b5cc6b000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000) = 0x780b5cc6b000
+mmap(0x780b5cc93000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x97000) = 0x780b5cc93000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x780b5cbf8000
+arch_prctl(ARCH_SET_FS, 0x780b5cbf8800) = 0
+set_tid_address(0x780b5cbf8ad0)         = 1471
+set_robust_list(0x780b5cbf8ae0, 24)     = 0
+rseq(0x780b5cbf9120, 0x20, 0, 0x53053053) = 0
+mprotect(0x780b5ce94000, 16384, PROT_READ) = 0
+mprotect(0x780b5cc93000, 4096, PROT_READ) = 0
+mprotect(0x780b5ced0000, 4096, PROT_READ) = 0
+mprotect(0x5addefd86000, 8192, PROT_READ) = 0
+mprotect(0x780b5cf15000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x780b5ced4000, 35463)           = 0
+statfs("/sys/fs/selinux", 0x7ffc4487a090) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7ffc4487a090)      = -1 ENOENT (No such file or directory)
+getrandom("\x85\xd9\xcd\x0a\xd3\xb6\x30\x9d", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x5addf8a64000
+brk(0x5addf8a85000)                     = 0x5addf8a85000
+openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 390
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+access("/etc/selinux/config", F_OK)     = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3055776, ...}) = 0
+mmap(NULL, 3055776, PROT_READ, MAP_PRIVATE, 3, 0) = 0x780b5c90d000
+close(3)                                = 0
+ioctl(1, TCGETS, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=28, ws_col=160, ws_xpixel=0, ws_ypixel=0}) = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0750, st_size=4096, ...}) = 0
+getdents64(3, 0x5addf8a6ace0 /* 15 entries */, 32768) = 496
+getdents64(3, 0x5addf8a6ace0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+write(1, "README-cloudshell.txt\n", 22README-cloudshell.txt
+) = 22
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++
+lutfinisaaaa@cloudshell:~$ ^C
+lutfinisaaaa@cloudshell:~$ strace -e trace=open,read,write,close cat /etc/passwd
+close(3)                                = 0
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+close(3)                                = 0
+close(3)                                = 0
+read(3, "root:x:0:0:root:/root:/bin/bash\n"..., 131072) = 1425
+write(1, "root:x:0:0:root:/root:/bin/bash\n"..., 1425root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+messagebus:x:100:101::/nonexistent:/usr/sbin/nologin
+polkitd:x:997:997:User for polkitd:/:/usr/sbin/nologin
+syslog:x:101:102::/nonexistent:/usr/sbin/nologin
+dnsmasq:x:999:65534:dnsmasq:/var/lib/misc:/usr/sbin/nologin
+dhcpcd:x:102:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+redis:x:103:104::/var/lib/redis:/usr/sbin/nologin
+lutfinisaaaa@cloudshell:~$ strace ls
+execve("/usr/bin/ls", ["ls"], 0x7ffed7466580 /* 62 vars */) = 0
+brk(NULL)                               = 0x57e03f46d000
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7b33c5379000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=35463, ...}) = 0
+mmap(NULL, 35463, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7b33c5370000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libselinux.so.1", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=174472, ...}) = 0
+mmap(NULL, 181960, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7b33c5343000
+mmap(0x7b33c5349000, 118784, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x6000) = 0x7b33c5349000
+mmap(0x7b33c5366000, 24576, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x23000) = 0x7b33c5366000
+mmap(0x7b33c536c000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x7b33c536c000
+mmap(0x7b33c536e000, 5832, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7b33c536e000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\243\2\0\0\0\0\0"..., 832) = 832
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+fstat(3, {st_mode=S_IFREG|0755, st_size=2125328, ...}) = 0
+pread64(3, "\6\0\0\0\4\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0@\0\0\0\0\0\0\0"..., 784, 64) = 784
+mmap(NULL, 2170256, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7b33c5131000
+mmap(0x7b33c5159000, 1605632, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x28000) = 0x7b33c5159000
+mmap(0x7b33c52e1000, 323584, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1b0000) = 0x7b33c52e1000
+mmap(0x7b33c5330000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1fe000) = 0x7b33c5330000
+mmap(0x7b33c5336000, 52624, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7b33c5336000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libpcre2-8.so.0", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\0\0\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=625344, ...}) = 0
+mmap(NULL, 627472, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7b33c5097000
+mmap(0x7b33c5099000, 450560, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x2000) = 0x7b33c5099000
+mmap(0x7b33c5107000, 163840, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x70000) = 0x7b33c5107000
+mmap(0x7b33c512f000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x97000) = 0x7b33c512f000
+close(3)                                = 0
+mmap(NULL, 12288, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7b33c5094000
+arch_prctl(ARCH_SET_FS, 0x7b33c5094800) = 0
+set_tid_address(0x7b33c5094ad0)         = 1532
+set_robust_list(0x7b33c5094ae0, 24)     = 0
+rseq(0x7b33c5095120, 0x20, 0, 0x53053053) = 0
+mprotect(0x7b33c5330000, 16384, PROT_READ) = 0
+mprotect(0x7b33c512f000, 4096, PROT_READ) = 0
+mprotect(0x7b33c536c000, 4096, PROT_READ) = 0
+mprotect(0x57e020546000, 8192, PROT_READ) = 0
+mprotect(0x7b33c53b1000, 8192, PROT_READ) = 0
+prlimit64(0, RLIMIT_STACK, NULL, {rlim_cur=8192*1024, rlim_max=RLIM64_INFINITY}) = 0
+munmap(0x7b33c5370000, 35463)           = 0
+statfs("/sys/fs/selinux", 0x7fffd78c9440) = -1 ENOENT (No such file or directory)
+statfs("/selinux", 0x7fffd78c9440)      = -1 ENOENT (No such file or directory)
+getrandom("\xdd\x57\x1c\xdc\x60\xb0\x40\xac", 8, GRND_NONBLOCK) = 8
+brk(NULL)                               = 0x57e03f46d000
+brk(0x57e03f48e000)                     = 0x57e03f48e000
+openat(AT_FDCWD, "/proc/filesystems", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+read(3, "nodev\tsysfs\nnodev\ttmpfs\nnodev\tbd"..., 1024) = 390
+read(3, "", 1024)                       = 0
+close(3)                                = 0
+access("/etc/selinux/config", F_OK)     = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3055776, ...}) = 0
+mmap(NULL, 3055776, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7b33c4da9000
+close(3)                                = 0
+ioctl(1, TCGETS, {c_iflag=ICRNL|IXON|IUTF8, c_oflag=NL0|CR0|TAB0|BS0|VT0|FF0|OPOST|ONLCR, c_cflag=B38400|CS8|CREAD, c_lflag=ISIG|ICANON|ECHO|ECHOE|ECHOK|IEXTEN|ECHOCTL|ECHOKE, ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=28, ws_col=160, ws_xpixel=0, ws_ypixel=0}) = 0
+openat(AT_FDCWD, ".", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 3
+fstat(3, {st_mode=S_IFDIR|0750, st_size=4096, ...}) = 0
+getdents64(3, 0x57e03f473ce0 /* 15 entries */, 32768) = 496
+getdents64(3, 0x57e03f473ce0 /* 0 entries */, 32768) = 0
+close(3)                                = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x2), ...}) = 0
+write(1, "README-cloudshell.txt\n", 22README-cloudshell.txt
+) = 22
+close(1)                                = 0
+close(2)                                = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

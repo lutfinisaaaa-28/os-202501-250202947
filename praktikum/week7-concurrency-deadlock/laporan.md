@@ -138,8 +138,7 @@ Strategi penanganan Deadlock yang paling efektif adalah dengan membatasi jumlah 
 | |  |  |
 
      
-|2.| ls -lcd /tmp | Perintah ls -lcd /tmp di Linux memiliki fungsi untuk menampilkan detail file atau direktori /tmp saja, termasuk informasi hak akses (permissions), dan menggunakan timestamp waktu perubahan terakhir pada metadata (c-time).|
-|3.| ls -a | Fungsi dari perintah ls -a di Linux adalah untuk menampilkan daftar semua file dan direktori dalam lokasi saat ini, termasuk file tersembunyi.ls: Perintah dasar untuk mendaftar isi suatu direktori.-a (all): Opsi ini (flag) memerintahkan ls untuk menyertakan file yang tersembunyi|
+
 
 ## Diskusi 
 

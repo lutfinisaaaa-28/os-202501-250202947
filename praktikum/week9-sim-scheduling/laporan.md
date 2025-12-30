@@ -100,9 +100,7 @@ Arsitektur OS (Context Switching): Meskipun simulasi ini terlihat sederhana, dal
 ## Refleksi Diri
 Tuliskan secara singkat:
 - Apa bagian yang paling menantang minggu ini? 
-**Menjalankan pyhton**
 - Bagaimana cara Anda mengatasinya?  
-**Mencoba**
 
 ---
 

@@ -46,7 +46,12 @@ Sertakan screenshot hasil percobaan atau diagram:
 
  | Nomer | Perintah| Makna Hasil |
 | :--- | :---: | ---: |
-|1.| pwd| Fungsi utama perintah ini di lingkungan command line interface (CLI) Linux, macOS, dan sistem berbasis Unix lainnya adalah untuk menampilkan jalur lengkap (absolute path) dari direktori tempat Anda saat ini bekerja atau berada. |
+| Kondisi Deadlock | Terjadi di Versi Deadlock | Solusi di Versi Fixed |
+| :--- | :---: | ---: |
+     |kondisi | jalam |khvh |
+     | Kondisi Deadlock | Terjadi di Versi Deadlock | Solusi di Versi Fixed |
+     |jsksj| kdjd |jdjbf |
+     
 |2.| ls -lcd /tmp | Perintah ls -lcd /tmp di Linux memiliki fungsi untuk menampilkan detail file atau direktori /tmp saja, termasuk informasi hak akses (permissions), dan menggunakan timestamp waktu perubahan terakhir pada metadata (c-time).|
 |3.| ls -a | Fungsi dari perintah ls -a di Linux adalah untuk menampilkan daftar semua file dan direktori dalam lokasi saat ini, termasuk file tersembunyi.ls: Perintah dasar untuk mendaftar isi suatu direktori.-a (all): Opsi ini (flag) memerintahkan ls untuk menyertakan file yang tersembunyi|
 

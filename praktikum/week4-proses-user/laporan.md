@@ -102,7 +102,7 @@ Sertakan screenshot hasil percobaan atau diagram:
 ---
 
 
-## Keaimpulan
+## Kesimpulan
 1. Manajemen Akses Berpusat pada Keamanan (Root & Users) 
 Sistem Linux membagi kontrol menjadi hierarki yang ketat: pengguna biasa beroperasi di bawah Prinsip Hak Akses Paling Kecil untuk menjaga keamanan dan akuntabilitas, sementara akun root adalah administrator absolut yang dapat mengabaikan semua izin untuk melakukan tugas-tugas kritis. Praktik modern mendorong penggunaan sudo sebagai pengganti login langsung ke root untuk mengendalikan hak istimewa secara temporer dan tercatat, yang merupakan mekanisme penting untuk mencegah kerusakan sistem dan kompromi keamanan.
 
